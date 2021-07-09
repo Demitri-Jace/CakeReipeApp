@@ -1,0 +1,210 @@
+<ons-page id="login">
+
+    <!-- top search bar -->
+
+    <p style="text-align: center; margin-top: 10px;">
+        <ons-search-input
+        placeholder="Search"
+        onchange="ons.notification.alert('Searched for: ' + this.value)"
+        style="width: 90%; padding: 10px;"
+        ></ons-search-input>
+    </p>
+
+    <ons-row>
+        <ons-col>
+            <!-- list that contains all added recipes -->
+            <ons-list-item id="recipe_list">
+                <div class="list_container" style="padding: 0px 10px 10px 10px;">
+
+                <div class="center_content" style="background-color: #ffffff; padding: 0px; 
+                border-radius: 10px; align-content: center;">
+
+                        <div class="cake_image" style="border-radius:10px">
+                            <img src="assets/img/cake 1.jpg" alt="image" style="width: 100%;
+                            border-radius: 10px 10px 0px 0px;">  
+                        </div>
+
+                        <div class="more_details" onclick="readMore()">
+                            <div class="header" style="padding: 10px; font-weight: bold;
+                            font-size: 20px;">
+                                <span class="recipe_header">The Ultimate Decadent Chocolate-and-Cream Layer Cake</span>
+                            </div>
+
+                            <div class="description" style="padding: 10px;
+                            font-size: 15px;">
+                                <span class="recipe_description" >Read More...</span>
+                            </div>
+                        </div>
+
+                        <div class="option_icons" style="align-items: center; padding: 0px 20px 0px 20px;
+                        vertical-align: middle; ">
+                            <ons-row class="option-buttons">
+                                <ons-col>
+                                    <ons-button modifier="quiet" onClick="addRecipe()">
+                                        <ons-icon class="favorite" icon="ion-ios-heart" style="font-size:30px;
+                                        padding: 10px; vertical-align: middle; color: black;"
+                                        ></ons-icon>
+                                    </ons-button>
+                                </ons-col>
+                                <ons-col>
+                                    <ons-button modifier="quiet">
+                                        <ons-icon icon="ion-ios-arrow-up" style="font-size: 30px;
+                                        padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                    </ons-button>
+                                </ons-col>
+                                <ons-col>
+                                    <ons-button modifier="quiet">
+                                        <ons-icon icon="ion-ios-arrow-down" style="font-size: 30px;
+                                        padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                    </ons-button>
+                                </ons-col>
+                                <ons-col>
+                                    <ons-button modifier="quiet">
+                                        <ons-icon icon="ion-ios-chatboxes" style="font-size: 30px;
+                                        padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                    </ons-button>
+                                </ons-col>
+                                <!-- <ons-col>
+                                    <ons-button modifier="quiet">
+                                        <ons-icon icon="ion-ios-people" style="font-size: 30px; padding: 10px"></ons-icon>
+                                    </ons-button>
+                                </ons-col> -->
+                            </ons-row>
+                        </div>
+
+                </div>
+
+                </div>
+                <div class="list_container" style="padding: 0px 10px 10px 10px;">
+
+                    <div class="center_content" style="background-color: #ffffff; padding: 0px; 
+                    border-radius: 10px; align-content: center;">
+
+                            <div class="cake_image" style="border-radius:10px">
+                                <img src="assets/img/cake 2.jpg" alt="image" style="width: 100%;
+                                border-radius: 10px 10px 0px 0px;">  
+                            </div>
+
+                            <div class="more_details" onclick="readMore1()">
+                                <div class="header" style="padding: 10px; font-weight: bold;
+                                font-size: 20px;">
+                                    <span class="recipe_header">Blackout Chocolate Cake</span>
+                                </div>
+
+                                <div class="description" style="padding: 10px;
+                                font-size: 15px;">
+                                    <span class="recipe_description" >Read More...</span>
+                                </div>
+                            </div>
+
+                            <div class="option_icons" style="align-items: center; padding: 0px 20px 0px 20px;
+                            vertical-align: middle; ">
+                                <ons-row class="option-buttons">
+                                    <ons-col>
+                                        <ons-button modifier="quiet" onClick="addRecipe1()">
+                                            <ons-icon class="favorite" icon="ion-ios-heart" style="font-size:30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-arrow-up" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-arrow-down" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-chatboxes" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <!-- <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-people" style="font-size: 30px; padding: 10px"></ons-icon>
+                                        </ons-button>
+                                    </ons-col> -->
+                                </ons-row>
+                            </div>
+
+                    </div>
+
+                </div>
+                <div class="list_container" style="padding: 0px 10px 10px 10px;">
+
+                    <div class="center_content" style="background-color: #ffffff; padding: 0px; 
+                    border-radius: 10px; align-content: center;">
+
+                            <div class="cake_image" style="border-radius:10px">
+                                <img src="assets/img/cake 5.jpg" alt="image" style="width: 100%;
+                                border-radius: 10px 10px 0px 0px;">  
+                            </div>
+
+                            <div class="more_details" onclick="readMore2()">
+                                <div class="header" style="padding: 10px; font-weight: bold;
+                                font-size: 20px;">
+                                    <span class="recipe_header">Flour-less Chocolate Cake</span>
+                                </div>
+
+                                <div class="description" style="padding: 10px;
+                                font-size: 15px;">
+                                    <span class="recipe_description" >Read More...</span>
+                                </div>
+                            </div>
+
+                            <div class="option_icons" style="align-items: center; padding: 0px 20px 0px 20px;
+                            vertical-align: middle; ">
+                                <ons-row class="option-buttons">
+                                    <ons-col>
+                                        <ons-button modifier="quiet"  onClick="addRecipe2()">
+                                            <ons-icon class="favorite" icon="ion-ios-heart" style="font-size:30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet" >
+                                            <ons-icon icon="ion-ios-arrow-up" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-arrow-down" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-chatboxes" style="font-size: 30px;
+                                            padding: 10px; vertical-align: middle; color: black;"></ons-icon>
+                                        </ons-button>
+                                    </ons-col>
+                                    <!-- <ons-col>
+                                        <ons-button modifier="quiet">
+                                            <ons-icon icon="ion-ios-people" style="font-size: 30px; padding: 10px"></ons-icon>
+                                        </ons-button>
+                                    </ons-col> -->
+                                </ons-row>
+                            </div>
+
+                    </div>
+
+                </div>
+            </ons-list-item>
+        </ons-col>
+    </ons-row>
+
+    <!-- floating action button -->
+
+    <ons-fab position="bottom right" ripple="true" onclick="add()"
+    style="background-color: #62191C;">
+        <ons-icon icon="md-plus"></ons-icon>
+    </ons-fab>
+
+</ons-page>
+

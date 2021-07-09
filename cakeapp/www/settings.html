@@ -1,0 +1,72 @@
+<ons-page id="settings">
+
+    <p class="setting">
+
+        <ons-list-header style="background-color: transparent;">Lists</ons-list-header>
+        <ons-list-item modifier="lists" tappable
+        style="background-color: #ffffff; border-radius: 10px;">
+            <ons-icon icon="ion-ios-heart" class="list-item__icon"></ons-icon>
+            Favorites
+        </ons-list-item>
+    
+        <ons-list-header style="margin-top: 30px; background-color: transparent;">Preferences</ons-list-header>
+
+        <ons-list-item style="background-color: #ffffff; border-radius: 10px;">
+            <ons-icon icon="ion-ios-moon" class="list-item__icon"></ons-icon>
+            Dark Mode
+            <ons-switch style="margin-left: 150px;"></ons-switch>
+        </ons-list-item>
+
+        <ons-list-item style="background-color: #ffffff; border-radius: 10px; margin-top: 20px;">
+            <ons-icon icon="ion-ios-eye" class="list-item__icon">
+                <span style="padding: 0px 80px 0px 5px;">Font Style</span>
+            </ons-icon>
+                <ons-select onchange="myFunction(this);"> 
+
+                    <option value="normal">Normal</option>
+                    <option value="italic">Italic</option>
+                    <option value="serif">Sans serif</option>
+
+                </ons-select>
+
+        </ons-list-item>
+
+        <ons-list-item style="background-color: #ffffff; border-radius: 10px; margin-top: 20px;">
+            <ons-icon icon="ion-ios-eye" class="list-item__icon">
+                <span style="padding: 0px 80px 0px 5px;">Font Size</span>
+            </ons-icon>
+                <ons-select onchange="my1Function(this);">
+
+                    <option value="one">10px</option>
+                    <option value="two">20px</option>
+                    <option value="three">30px</option>
+
+                </ons-select>
+
+        </ons-list-item>
+
+        <ons-list-item style="background-color: #ffffff; border-radius: 10px; margin-top: 20px;">
+                <ons-icon icon="ion-ios-mic" class="list-item__icon"></ons-icon>
+                Notification
+                <ons-switch style="margin-left: 150px;"></ons-switch>
+        </ons-list-item>
+
+        <ons-list-header style="margin-top: 30px; background-color: transparent;">Account</ons-list-header>
+
+        <ons-list-item modifier="account" tappable
+        style="background-color: #ffffff; border-radius: 10px;">
+            <ons-icon icon="ion-ios-people" class="list-item__icon"></ons-icon>
+            Account Settings
+        </ons-list-item>
+
+        <ons-list-item modifier="logout" tappable onclick="leave()";
+        style="background-color: #ffffff; border-radius: 10px; margin-top: 20px;">
+            <ons-icon icon="ion-ios-flag" class="list-item__icon"></ons-icon>
+            Log Out
+        </ons-list-item>
+
+    </p>
+
+
+    
+</ons-page>

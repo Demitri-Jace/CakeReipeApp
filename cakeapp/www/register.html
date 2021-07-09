@@ -1,0 +1,59 @@
+<ons-page id="login">
+
+    <ons-toolbar>
+    <div class="center" style="background-color: #62191C; 
+    color: white; font-weight: bold; font-size: 15px;">Register</div>
+    </ons-toolbar>
+
+    <!-- registration form inputs -->
+
+    <div id="register-form" style="padding: 30px; align-content: center;">
+
+        <form id="register">
+
+            <p class="logo" style="margin-top: 30px; margin-bottom: 40px">
+                <img src="assets/img/logo.png " alt="Application Logo " width="60% ">
+            </p>
+
+            <p>
+                <label>Name</label><br>
+                <ons-input id="user_name" type="text" placeholder="Name" 
+                style="background-color: #FFFFFF; padding: 5px;
+                border-radius: 10px; height: 30px; font-size: 20px; 
+                margin: 5px 0px 5px 0px; width: 97%"></ons-input>
+            </p>
+            <p>
+                <label>Surname</label><br>
+                <ons-input id="user_surname" type="text" placeholder="Surname"
+                style="background-color: #FFFFFF; padding: 5px;
+                border-radius: 10px; height: 30px; font-size: 20px; 
+                margin: 5px 0px 5px 0px; width: 97%"></ons-input>
+            </p>
+            <p>
+                <label>Email Address</label><br>
+                <ons-input id="user_email" type="email" placeholder="Email Address"
+                style="background-color: #FFFFFF; padding: 5px;
+                border-radius: 10px; height: 30px; font-size: 20px; 
+                margin: 5px 0px 5px 0px; width: 97%"></ons-input>
+            </p>
+            
+            <p>
+                <label>Password</label><br>
+                <ons-input id="user_password" type="password" placeholder="Password"
+                style="background-color: #FFFFFF; padding: 5px;
+                border-radius: 10px; height: 30px; font-size: 20px; 
+                margin: 5px 0px 5px 0px; width: 97%"></ons-input>
+            </p>
+            <p>
+                <ons-button class="button--large--cta" 
+            style="width: 60%; margin: 0 auto; background-color: #62191C;
+            border-radius: 15px; margin-top: 50px; align-content: center;
+            font-weight: bold;" 
+            onclick="registerUser()">Register</ons-button>
+            </p>
+
+        </form>
+        
+    </div>
+
+</ons-page>

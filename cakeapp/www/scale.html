@@ -1,0 +1,312 @@
+<ons-page id="scale">
+
+    <!-- calculator scale script -->
+
+    <script>
+
+        var input = document.getElementById('input');
+        var output = document.getElementById('output');
+        var inputType = document.getElementById('inputType');
+        var outputType = document.getElementById('outputType');
+        var inputTypeValue, outputTypeValue;
+
+        input.addEventListener("keyup", myOutput);
+        inputType.addEventListener("change", myOutput);
+        outputType.addEventListener("change", myOutput);
+
+        inputTypeValue = inputType.value;
+        outputTypeValue = outputType.value;
+
+            function myOutput () {
+
+                inputTypeValue = inputType.value;
+                outputTypeValue = outputType.value;
+
+                /* kilograms */
+
+                if(inputTypeValue === "kilogram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) * 1000;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 1000000;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) * 10000;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) * 100;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) * 100000;
+
+                }else if(inputTypeValue === "kilogram" && outputTypeValue === "kilogram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* grams */
+
+                if(inputTypeValue === "gram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 0.001;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 1000;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) / 0.01;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) / 0.1;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) * 100;
+
+                }else if(inputTypeValue === "gram" && outputTypeValue === "gram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* milligrams */
+
+                if(inputTypeValue === "milligram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 1000000;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) / 1000;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) / 100;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) / 100000;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) / 10000;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) / 10;
+
+                }else if(inputTypeValue === "milligram" && outputTypeValue === "milligram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* decigrams */
+
+                if(inputTypeValue === "decigram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 10000;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) / 10;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 100;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) / 1000;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) / 100;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "decigram" && outputTypeValue === "decigram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* hectograms */
+
+                if(inputTypeValue === "hectogram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 10;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) * 100;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 100000;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) * 1000;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) * 10000;
+
+                }else if(inputTypeValue === "hectogram" && outputTypeValue === "hectogram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* decagrams */
+
+                if(inputTypeValue === "decagram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 100;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 10000;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) * 100;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) / 10;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "centigram"){
+
+                    output.value = Number(input.value) * 1000;
+
+                }else if(inputTypeValue === "decagram" && outputTypeValue === "decagram"){
+
+                    output.value = input.value;
+
+                }
+
+                /* centigrams */
+
+                if(inputTypeValue === "centigram" && outputTypeValue === "kilogram"){
+
+                    output.value = Number(input.value) / 100000;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "gram"){
+
+                    output.value = Number(input.value) / 100;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "milligram"){
+
+                    output.value = Number(input.value) * 10;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "decigram"){
+
+                    output.value = Number(input.value) / 10;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "hectogram"){
+
+                    output.value = Number(input.value) / 10000;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "decagram"){
+
+                    output.value = Number(input.value) / 1000;
+
+                }else if(inputTypeValue === "centigram" && outputTypeValue === "centigram"){
+
+                    output.value = input.value;
+
+                }
+
+            }
+
+    </script>
+
+    <!-- calculator card view -->
+
+    <ons-card id="mcard" style="text-align: center; border-radius: 20px;">
+
+        <div class="title" style="text-align: center; font-weight: bold;
+        font-size: 30px; margin: 50px 20px 30px 20px;">Weight Converter</div>
+
+        <p>
+            <ons-select id="inputType" style="padding: 10px;
+            background-color: #F3F3F3; border-radius: 10px;">
+
+                <option value="kilogram">Kilogram</option>
+                <option value="gram">Gram</option>
+                <option value="milligram">Milligram</option>
+                <option value="decagram">Decagram</option>
+                <option value="decigram">Decigram</option>
+                <option value="hectogram">Hectogram</option>
+                <option value="centigram">Centigram</option>
+
+            </ons-select>
+        </p>
+
+        <p>
+            <label>Input Weight</label><br>
+            <ons-input id="input" type="number"  placeholder="input weight" 
+            style=" background-color: #F3F3F3; padding: 10px;
+            border-radius: 10px; height: 30px; font-size: 50px; 
+            margin: 10px; width: 80%;"
+            ></ons-input>
+
+        </p>
+
+        <p>
+            <ons-select id="outputType" style="padding: 10px;
+            background-color: #F3F3F3; border-radius: 10px;">
+
+                <option value="kilogram">Kilogram</option>
+                <option value="gram">Gram</option>
+                <option value="milligram">Milligram</option>
+                <option value="decagram">Decagram</option>
+                <option value="decigram">Decigram</option>
+                <option value="hectogram">Hectogram</option>
+                <option value="centigram">Centigram</option>
+
+            </ons-select>
+        </p>
+
+        <p>
+            <label>Weight Result</label><br>
+            <ons-input id="output" type="number"  placeholder="weight results" 
+            style=" background-color: #F3F3F3; padding: 10px;
+            border-radius: 10px; height: 30px; font-size: 50px; 
+            margin: 10px; width: 80%;"
+            ></ons-input>
+
+        </p>
+
+    </ons-card>
+
+</ons-page>
